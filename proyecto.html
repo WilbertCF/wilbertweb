@@ -4,29 +4,30 @@
 		<meta charset="utf-8">
 		<title>Wilbert Crisolo</title>
 		<link rel="icon" type="img/png" href="imagenes/loguito.png" />
+		<link rel="stylesheet" type="text/css" href="css/diseño.css">
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div>
-				<figure>
+				<figure class="logo">
 					<img src="imagenes/logo.jpeg" alt="logo de http://wilbertcrisolo.com" width="400">
 				</figure>
-				<nav>
+				<nav class="menu">
 					<ol>
 						<li>
-							<a href="">Portafolio</a>
+							<a class="link" href="./Portafolio/index.html">Portafolio</a>
 						</li>
 						<li>
-							<a href="">Experiemcia</a>
+							<a class="link" href="#eventos">Experiemcia</a>
 						</li>
 						<li>
-							<a href="">Trabajemos juntos</a>
+							<a class="link" href="#contacto">Trabajemos juntos</a>
 						</li>
 					</ol>
 				</nav>
 			</div>
 		</header>
-		<section>
+		<section class="hero">
 			<h1>
 				Hola! soy <strong>Wilbert Crisolo</strong>, <br/>Desarrollador <strong>Tecnologico</strong> y <br/>deseo <strong>conocer todo el mundo</strong>
 			</h1>
@@ -34,7 +35,7 @@
 				<img src="imagenes/portada.jpg" width="500" height="360" alt="Imagen principal dl sitio">imagen de portada
 			</figure>
 		</section>
-		<section>
+		<section id="Portafolio">
 			<h2>Portafolio (Proyectos destacados)</h2>
 			<article>
 				<h3>Proyecto Nº1</h2>
@@ -47,7 +48,7 @@
 				</figure>
 			</article>
 		</section>
-		<section>
+		<section id="eventos">
 			<h2>Más sobre mi experiencia</h2>
 			<article>
 				<figure>
@@ -55,10 +56,17 @@
 				</figure>
 				<h3>H&T ENGINEERING EN AEROFEST</h3>
 				<p>Desarrollo de UAV's, tanto estructural como software, para luego aplicarlos al sector cartografico y asi poder obtener medias mucho mas exactas, nos presentamos para poder ser participes de los eventos principales en LIMA</p>
-				<a href="">Ver platica</a>
+				<a href="https://www.youtube.com/watch?v=x0Qc0zVs1I0" target="_blank">Ver video</a>
 			</article>
 		</section>
-		<section>Seccion contacto</section>
+		<section id="contacto">
+			<form action="/Suscripcion/">
+				<h3>¿Creamos algo juntos?</h3>
+				<label for="E-mail">Déjame tu E-mail</label>
+				<input type="text" placeholder="example@vergoño.com" id="E-mail">
+				<input type="submit" value="texto del boton">
+			</form>
+		</section>
 		<footer>footer</footer>
 	</body>
 </html>
